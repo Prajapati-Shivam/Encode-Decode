@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encode-Decode</title>
+  <script src="https://kit.fontawesome.com/1fb5b48ec8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Encode-Decode</h1>
+  <p class="tip hide">
+    <b>Tip:</b> Write your message in the encode section to cipher the message and you can decipher the message in the decode section
+  </p>
+  <div class="container">
+    <div class="box">
+      <h2>Encode:</h2>
+      <textarea rows="5" id="encode-input"></textarea>
+      <div class="result">
+        <div class="head">
+          <h3>Encoded text:</h3>
+          <button>
+            <i class="fa-regular fa-clipboard" title="copy" onclick="copyEncode()"></i>
+          </button>
+        </div>
+        <p id="encoded-text"></p>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Decode:</h3>
+      <textarea rows="5" id="decode-input"></textarea>
+      <div class="result">
+        <div class="head">
+          <h3>Decoded text:</h3>
+          <button>
+            <i class="fa-regular fa-clipboard" title="copy" onclick="copyDecode()"></i>
+          </button>
+        </div>
+        <p id="decoded-text"></p>
+      </div>
+    </div>
+  </div>
+  <p class="tip">
+    <b>Tip:</b> Write your message in the encode section to cipher the message and you can decipher the message in the decode section
+  </p>
+</body>
+</html>

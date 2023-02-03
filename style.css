@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  background-color: darkblue;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: .4em;
+}
+
+.tip.hide {
+  display: none;
+}
+
+body {
+  background-color: lightgreen;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+.box {
+  background-color: cyan;
+  border: 5px solid white;
+  width: 40%;
+  max-width: 400px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+}
+
+.box h2 {
+  margin-bottom: .5em;
+  font-size: 2em;
+}
+
+.box textarea {
+  padding: .5em;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.result {
+  border: 2px dashed grey;
+  height: 135px;
+  padding: .3em;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head button {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tip {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    margin: 7em 0;
+  }
+
+  .box {
+    width: 300px;
+  }
+
+  .tip {
+    display: none;
+  }
+
+  .tip.hide {
+    display: block;
+    position: relative;
+    top: 80px;
+  }
+
+  .container {
+    margin-top: 10em;
+  }
+}
